@@ -27,3 +27,5 @@ i = 0
 for imageTuple in top10:
     shutil.copyfile(imageTuple[0], 'result/' + str(i) + '.jpg')
     i = i+1
+
+exit(0)
