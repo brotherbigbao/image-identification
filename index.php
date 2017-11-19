@@ -2,7 +2,7 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //print_r($_SERVER);
         //print_r($_FILES);
-        if (isset($_FILES['searchImage']) && $_FILES['error'] == 0) {
+        if (isset($_FILES['searchImage'])) {
             move_uploaded_file($_FILES['searchImage']['tmp_name'], __DIR__ . '/search/search.jpg');
             exec('cd ' . __DIR__ .' && /usr/local/bin/python3 search.py');
         }
