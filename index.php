@@ -20,12 +20,13 @@
     <style type="text/css">
     .image-row { margin-top: 10px; }
     .search-result-container { border: 1px #aaa solid; padding: 8px; }
+    img { width: 150px; }
     </style>
   </head>
   <body>
     <div style="margin: 20px 20px;">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-success" style="border-bottom: 1px dashed;margin-bottom: 30px;">
                 <h1>相似颜色图像检索</h1>
             </div>
         </div>
@@ -33,7 +34,7 @@
             <div class="col-md-12">
                 <form method="post" enctype="multipart/form-data">
                   <div class="form-group">
-                    <label for="searchImage">请上传要检索的图片</label>
+                    <label for="searchImage">请上传</label>
                     <input name="searchImage" type="file" id="searchImage">
                   </div>
                   <button type="submit" class="btn btn-default">检索</button>
@@ -41,53 +42,49 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <h2>上次检索图片</h2>
+            <div class="col-md-12 text-success">
+                <h4>被检索检索图片</h4>
                 <img src="search/search.jpg" />
-                <h2>上次检索结果</h2>
+                <h4>检索结果</h4>
             </div>
         </div>
-        <div class="row search-result-container">
+        <div class="row search-result-container" style="margin-top: 30px">
             <div class="row image-row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/0.jpg" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/1.jpg" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/2.jpg" />
                 </div>
-            </div>
-            <div class="row image-row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/3.jpg" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/4.jpg" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/5.jpg" />
                 </div>
             </div>
             <div class="row image-row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/6.jpg" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/7.jpg" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/8.jpg" />
                 </div>
-            </div>
-            <div class="row image-row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <img src="result/9.jpg" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                 </div>
             </div>
         </div>
